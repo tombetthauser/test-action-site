@@ -10,7 +10,7 @@ def update_index_html(image_files, index_path='index.html'):
     if not image_files:
         return
 
-    img_tags = ''.join([f'<img src="{file}" alt="{file}">\n' for file in image_files])
+    img_tags = ''.join([f'<img src="./images/{file}" alt="{file}">\n' for file in image_files])
 
     # Read the existing content of the index.html
     with open(index_path, 'r') as file:
